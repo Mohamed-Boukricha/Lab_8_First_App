@@ -1,3 +1,9 @@
+/* We use this ts script  to manage the product-list. 
+      Create by : Mohamed Boukricha
+      Date : 14/05/2020
+*/
+
+
 import { Component } from '@angular/core';
 
 import { products } from '../products';
