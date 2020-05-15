@@ -1,3 +1,9 @@
+/* We use this ts script  to manage the app.component. 
+      Create by : Mohamed Boukricha
+      Date : 14/05/2020
+*/
+
+
 import { Component } from '@angular/core';
 
 @Component({
