@@ -1,7 +1,7 @@
-/* <!-- We use this ts script  to handle the product alerts. 
+/* We use this ts script  to handle the product alerts. 
       Create by : Mohamed Boukricha
       Date : 14/05/2020
--->*/
+*/
 
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core'; // import Input from @angular/core.
