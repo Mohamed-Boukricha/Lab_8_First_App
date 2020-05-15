@@ -4,8 +4,10 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class CartService {
-  items = [];
+  items = []; //define an items property to store the array of the current products in the cart.
+/* Define methods to add items to the cart, return cart items, and clear the cart items:
 
+*/
   addToCart(product) {
     this.items.push(product);
   }
