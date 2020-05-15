@@ -9,7 +9,7 @@ import { products } from '../products';
 })
 export class ProductListComponent {
   products = products;
-
+/*Next, define the behavior that should happen when the user clicks the button.*/
   share() {
     window.alert('The product has been shared!');
   }
