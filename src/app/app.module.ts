@@ -1,3 +1,11 @@
+
+/* We use this script to set up the Angular Router,  to define navigation of our app
+    
+    create by : Mohamed Boukricha
+    Date : 14/05/2020
+
+*/
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
