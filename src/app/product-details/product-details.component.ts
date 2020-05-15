@@ -1,3 +1,8 @@
+/* We use this ts script  to manage the product-details. 
+      Create by : Mohamed Boukricha
+      Date : 14/05/2020
+*/
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router'; // Import ActivatedRoute from the @angular/router package 
 
