@@ -16,7 +16,7 @@ export class ProductDetailsComponent implements OnInit {
     private route: ActivatedRoute, // inject the ActivatedRoute into the constructor by adding it as an argument within the constructor's parentheses.
     private cartService: CartService // // inject the CartService into the constructor by adding it as an argument within the constructor's parentheses.
   ) { }
-
+/*Define the addToCart() method, which adds the current product to the cart.*/
 addToCart(product) {
     this.cartService.addToCart(product);
     window.alert('Your product has been added to the cart!');
