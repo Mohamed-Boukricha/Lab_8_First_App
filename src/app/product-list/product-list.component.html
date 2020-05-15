@@ -1,18 +1,29 @@
+
+
+<!-- We use this template template to display a list of product names. 
+
+      Create by : Mohamed Boukricha
+      Date : 14/05/2020
+-->
+
+
+
 <h2>Products</h2>
 
-<div *ngFor="let product of products; index as productId">
+<div *ngFor="let product of products; index as productId"> <!-- To iterate over the predefined list of products, we use  the *ngFor directive on a <div>-->
+
 
   <h3>
-    <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
+    <a [title]="product.name + ' details'" [routerLink]="['/products', productId]"> <!-- To display the names of the products, use the interpolation syntax {{ }}-->
       {{ product.name }}
     </a>
   </h3>
 
-  <p *ngIf="product.description">
+  <p *ngIf="product.description"> <!-- we use an *ngIf directive so that Angular only creates the <p> element if the current product has a description--> 
     Description: {{ product.description }}
   </p>
 
-  <button (click)="share()">
+  <button (click)="share()"> <!-- We add a button so users can share a product with friends. Bind the button's click event to the share() method.-->
     Share
   </button>
 
