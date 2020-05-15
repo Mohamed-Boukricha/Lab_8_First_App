@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute } from '@angular/router'; // Import ActivatedRoute from the @angular/router package 
 
-import { products } from '../products';
-import { CartService } from '../cart.service';
+import { products } from '../products'; // import products array from ../products
+import { CartService } from '../cart.service'; // import CartService from ../cart.service
 
 @Component({
   selector: 'app-product-details',
@@ -13,8 +13,8 @@ export class ProductDetailsComponent implements OnInit {
 
   product;
    constructor(
-    private route: ActivatedRoute,
-    private cartService: CartService
+    private route: ActivatedRoute, // inject the ActivatedRoute into the constructor by adding it as an argument within the constructor's parentheses.
+    private cartService: CartService // // inject the CartService into the constructor by adding it as an argument within the constructor's parentheses.
   ) { }
 
 addToCart(product) {
@@ -22,7 +22,7 @@ addToCart(product) {
     window.alert('Your product has been added to the cart!');
   }
 
-  ngOnInit() {
+  ngOnInit() { // In the ngOnInit() method, subscribe to route parameters and fetch the product based on the productId.
     this.route.paramMap.subscribe(params => {
     this.product = products[+params.get('productId')];
   })
