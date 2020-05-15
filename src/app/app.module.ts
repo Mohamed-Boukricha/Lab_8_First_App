@@ -29,9 +29,9 @@ import { ShippingComponent } from './shipping/shipping.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent },
-      { path: 'cart', component: CartComponent },
-      { path: 'shipping', component: ShippingComponent },
+      { path: 'products/:productId', component: ProductDetailsComponent }, // adding a route with path for product details
+      { path: 'cart', component: CartComponent }, // adding a route with path for cart component
+      { path: 'shipping', component: ShippingComponent }, // adding a route with path for Shipping component
     ])
   ],
   declarations: [
