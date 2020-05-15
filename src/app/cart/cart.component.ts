@@ -1,3 +1,8 @@
+/* We use this ts script  to manage the cart. 
+      Create by : Mohamed Boukricha
+      Date : 14/05/2020
+*/
+
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms'; //Import FormBuilder from @angular/forms.
 
