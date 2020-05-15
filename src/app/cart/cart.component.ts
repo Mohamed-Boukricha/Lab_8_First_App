@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder } from '@angular/forms'; //Import FormBuilder from @angular/forms.
 
-import { CartService } from '../cart.service';
+import { CartService } from '../cart.service'; //Import the CartService from the cart.service.ts file.
+
 
 @Component({
   selector: 'app-cart',
@@ -13,8 +14,8 @@ export class CartComponent implements OnInit {
   checkoutForm;
 
   constructor(
-        private cartService: CartService,
-        private formBuilder: FormBuilder,
+        private cartService: CartService, // Inject the CartService so that the cart component can use it.
+        private formBuilder: FormBuilder, // Inject the FormBuilder.
 
   ) { 
     this.checkoutForm = this.formBuilder.group({
